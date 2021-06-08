@@ -13,13 +13,14 @@ const Searchbar = () => {
     const data = await searchPokemon(search);
     setPokemon(data);
   };
+
   return (
-    <div>
-      <div>
+    <div className="searchbar-container">
+      <div className="searchbar">
         <input placeholder="buscar Pokemon" onChange={onChange} />
       </div>
-      <div>
-        <button onClick>buscar</button>
+      <div className="searchbar-btn">
+        <button onClick={onClick}>buscar</button>
       </div>
       <div>
         {" "}
